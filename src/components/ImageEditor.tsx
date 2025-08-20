@@ -1,4 +1,3 @@
-import { sensitiveHeaders } from "http2";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
@@ -30,7 +29,7 @@ const ImageEditor = (props: ImageEditorPropsType) => {
   }
 
   if (settings.type === "wide") {
-    imageClasses === "aspect-video";
+    imageClasses = "aspect-video";
   }
 
   const changeSensitiveHandler = (sensitive: boolean) => {

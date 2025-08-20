@@ -22,9 +22,9 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ fileDetails: result }, { status: 200 });
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json(
-      { message: "Getting media failed!", error: error.message },
+      { message: "Getting media failed!" },
       { status: 500 }
     );
   }

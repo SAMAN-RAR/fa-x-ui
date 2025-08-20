@@ -1,19 +1,7 @@
 import Image from "./Image";
 import PostActions from "./PostActions";
 import PostInfo from "./PostInfo";
-import { imagekit } from "../utils";
 import Video from "./Video";
-
-interface FileDetailsResponse {
-  width: number;
-  heigth: number;
-  filPath: string;
-  url: string;
-  fileType: string;
-  customMetadata?: {
-    sensitive: boolean;
-  };
-}
 
 const Post = async () => {
   const getFileDetails = async (fileId: string) => {

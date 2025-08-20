@@ -35,7 +35,7 @@ const Share = () => {
   }
 
   if (settings.type === "wide") {
-    imageClasses === "aspect-video";
+    imageClasses = "aspect-video";
   }
 
   return (

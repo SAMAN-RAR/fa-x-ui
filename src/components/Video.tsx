@@ -11,7 +11,7 @@ interface VideoPropsType {
 
 const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 
-const video = (props: VideoPropsType) => {
+const Video = (props: VideoPropsType) => {
   const { src, className, sensitive } = props;
   const [isBlur, setIsBlur] = useState(sensitive);
 
@@ -26,4 +26,4 @@ const video = (props: VideoPropsType) => {
     </div>
   );
 };
-export default video;
+export default Video;
